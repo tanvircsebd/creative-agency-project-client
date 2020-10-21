@@ -12,7 +12,6 @@ const AddOrder = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const { register, handleSubmit, watch, errors } = useForm();
 
-
     const onSubmit = data => {
         const { name, email, task, file, productDetails, price } = data;
         const status = "Pending";
